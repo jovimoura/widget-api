@@ -28,3 +28,13 @@ npx prisma migrate dev
 
 
 use-case: são as funcionalidades da aplicação separadas 
+
+cors: é uma ferramenta q faz um controle de segurança no back end p q front-ends inadequados acessem os dados do backend, ele decide q front pode usar passando a url do front, assim :
+
+```
+app.use(cors({
+  origin: 'http://localhost:5173'
+}))
+```
+
+obs: se n tiver origin, fica aberto p geral
